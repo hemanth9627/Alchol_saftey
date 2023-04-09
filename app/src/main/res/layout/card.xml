@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardElevation="10dp"-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:ignore="ExtraText">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@android:color/holo_purple"
+                    android:textFontWeight="1000"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rel"
+                    android:textColor="@android:color/holo_purple"
+                    android:textFontWeight="1000"
+                    android:textSize="20dp"
+                    android:paddingLeft="80dp"/>
+<!--                <TextView-->
+<!--                    android:id="@+id/mbno"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="phno"-->
+<!--                    android:textColor="@android:color/holo_purple"-->
+<!--                    android:textFontWeight="1000"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:paddingLeft="150dp"-->
+<!--                    tools:ignore="InvalidId" />-->
+
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="78dp"
+                    android:layout_marginRight="78dp"
+                    android:drawableLeft="@drawable/baseline_edit_24" />
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="3dp"
+                    android:drawableLeft="@drawable/baseline_delete_24" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
